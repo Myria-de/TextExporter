@@ -14,6 +14,7 @@ Conversion is done by Python scripts and XSLT transformation.
 `./lwTextExporter.py -c html ~/lwText/Beispiele/beispiel_de.odt`
 
 Converted files: "Ausgabe/beispiel_de"
+
 "-c" defines the output format
 
 Possible values:
