@@ -1,7 +1,9 @@
 # TextExporter
-Convert Libre Office Files to DocBook
-Libre Office is not rquired. 
-Conversion is done by Python scripts and XSLT transformation (Linux)
+Convert Libre Office Files to DocBook (Linux).
+
+Installation of Libre Office is not rquired. 
+
+Conversion is done by Python scripts and XSLT transformation.
 
 **Requirements (Ubuntu)**
 
