@@ -1,0 +1,51 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.TH OOo2Dbk 1 "January  7, 2005"
+.SH NAME
+OOo2Dbk \- program to convert OpenOffice.org-Writer (ODT and SXW) files to DocBook XML documents.
+.SH SYNOPSIS
+.B OOo2Dbk
+.RI [ options ] " openoffice.org-file"
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B OOo2Dbk
+commands.
+.PP
+.SH OPTIONS
+This version of OOo2Dbk understands the following command line options.
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.TP
+.B \-cFILE, \-\-config=FILE
+Use FILE as the file path for the program configuration file. Defaults to the global /etc/ooo2dbk.xml configuration file or to the ooo2dbk.xml configuration file in the ooo2dbk executable directory.
+.TP
+.B \-zFILE, \-\-zipfile=FILE
+Use FILE as the filename for the generated ZIP archive
+.TP
+.B \-dFILE, \-\-dbkfile=FILE
+Use FILE as the filename for the generated DocBook XML file. This option has no effect if the -z/--zipfile option is used.
+.TP
+.B \-a, \-\-article
+Produce a DocBook XML article. This is the default.
+.TP
+.B \-b, \-\-book
+Produce a DocBook XML book.
+.TP
+.B \-xFILE, \-\-xslt=FILE
+Use FILE as the file path for the XSLT stylesheet. Defaults to the ooo2dbk.xsl stylesheet.
+.TP
+.B \-mNAME, \-\-cmdxslt=NAME
+Use command NAME as the XSLT processor. Available command names are defined in OOo2Dbk /etc/ooo2dbk.xml file. Defaults to xsltproc.
+.TP
+.B \-f, \-\-flatxml
+Preserve the intermediate OpenOffice.org XML file (global.xml)
+.TP
+.B \-v, \-\-verbose
+Print additional information to stdout when running conversion.
+.br
+.SH AUTHOR
+OOo2Dbk was written by Indesko (http://www.indesko.com/)
+.PP
+This manual page was written by Mohammed Adnène Trojette <adn+deb@diwi.org>,
+for the Debian project (but may be used by others).

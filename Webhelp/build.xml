@@ -1,0 +1,11 @@
+<project>
+  <!--<property name="input-xml" value="path-to/yourfile.xml"/> -->
+  <property name="input-images-dirs" value="images/** figures/** graphics/**"/>
+  <property name="custom-template-dir" value="template"/>
+  
+  <!-- <property name="output-dir" value="path-to/desired-output-dir"/> -->
+  <!-- <import file="../DOCBOOK/webhelp/build_custom_webhelp.xml"/> -->
+  <import file="../DOCBOOK/webhelp/build.xml"/>
+<!-- <import file="/usr/share/xml/docbook/stylesheet/docbook-xsl/webhelp/build.xml"/> -->
+  
+</project>

@@ -1,0 +1,38 @@
+====
+TODO
+====
+
+:Authors: - Marc-Aurèle Darche
+          - Laurent Godard
+
+:Revision: $Id$
+
+.. sectnum::    :depth: 4
+.. contents::   :depth: 4
+
+
+- Code cleaning: Remove the use of "global" variables.
+
+- File and image directory processing should be done in a temporary directory
+  rather than in the current directory (both when a single file or an archive
+  file is asked).
+
+- Rework the RPM generation so that it doesn't rely on any sudo or privileged
+  processings.
+
+- On Mandrake the default OpenOffice.org installation resides in
+  /usr/lib/openoffice so maybe the ooo2dbk.xml conf file of the RPM package
+  should reflect this. On another hand the default install of a stock
+  OpenOffice.org is in /opt/OpenOffice.org1.1.4.
+
+- ???? Automatically generates xslt and user defined textfields based on docbook possible metadatas (DTD ?)
+
+- Take jobtitle and quality correctly into naccount in the docbook.xsl
+
+- Deploy ooo2dbk as a module using distutils : need to rename to .py and create a caller script
+
+
+.. Local Variables:
+.. mode: rst
+.. End:
+.. vim: set filetype=rst:

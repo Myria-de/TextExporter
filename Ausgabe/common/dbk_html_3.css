@@ -1,0 +1,337 @@
+
+
+body {
+	color: black;
+	background: white;
+	margin-left: 10%;
+	margin-right: 30%;
+	font-family: arial, helvetica, sans-serif;
+	line-height : 130%;
+}
+
+/*Titre du document*/
+h1.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.7em;
+	color: navy;
+	background: white;
+	text-align: left;
+}
+		   
+h2.subtitle { 
+line-height: 1.2em;
+}
+           
+           /*Sous-titre du document*/
+h3.subtitle { 
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 1.1em;
+              color: navy;
+              background: white;
+              text-align: left;
+              }
+
+h3.author {
+font-size:1em;
+}
+div.affiliation, div.bibliomisc{
+	font-size:  90%;
+}
+/* Header definitions */
+h1, h2, h3, h4, h5, h6 {
+	font-family: arial, helvetica, sans-serif;
+	color: navy;
+	background: white;
+	font-weight: normal;
+	}
+
+div.section h1 { 
+     font-size: 1.5em ; 
+     }
+
+div.section h2 { 
+     font-size: 1.4em ;
+	padding : 0.5em 0 0;
+	margin: 1.7em 0 0.8em 0
+     }
+	 
+div.section h3 { 
+     font-size: 1.1em ;
+	margin: 1.4em 0 0.7em 0
+     }
+	 
+div.section h4 {
+     font-size: 1em ;
+	 	margin: 1.1em 0 0.5em 0
+     }
+	 
+div.section h5 { 
+     font-size: 1em ;
+	 	 	margin: 1em 0 0.5em 0
+     }
+	 
+div.section h6 { 
+     font-size: 1em ;
+     }
+
+hr {
+	margin : 0;
+}
+
+
+/* Tables*/
+
+.informaltable table {
+background: white;	
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.informaltable td, .informaltable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.informaltable tr:nth-child(even){background-color: #f2f2f2;}
+
+.informaltable tr:hover {background-color: #ddd;}
+
+.informaltable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}	
+.table-contents table {
+background: white;	
+border-collapse: collapse;
+width: 80%;	
+}
+.table-contents td, .table-contents th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+table { 
+        background: white;
+        }
+		
+th{
+     font-family: arial, helvetica, sans-serif;
+     background: white;
+	 text-align : left;
+	 
+     }
+	 
+td {
+     font-family: arial, helvetica, sans-serif;
+     background: white;
+     }
+
+#dltable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#dltable td, #dltable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+#dltable tr:nth-child(even){background-color: #f2f2f2;}
+
+#dltable tr:hover {background-color: #ddd;}
+
+#dltable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}	 
+	 
+/*Links*/
+a.plain { 
+          text-decoration: none;
+          }
+		  
+a:link {
+	color: navy;
+	}
+		
+a:visited {
+	color: Purple;
+	}
+
+a:active {
+    color: red;
+	background-color: Yellow;
+    }
+a:hover {
+	color: navy;
+	background-color: yellow;
+	text-decoration : none;
+	}
+
+/* Lists*/
+
+li {
+		margin: 1em 0 1em 0;
+}
+li p {
+	margin: 0 0 0.3em 0;
+}
+
+			  
+/* Footnotes */
+div.footnotes p {
+	background: white;
+	color: black;
+	font-size: 85%;
+	margin-left: 0%;
+	}
+
+
+div.affiliation {  }
+
+
+div.abstract p { 
+	margin: 0.5em 2em 0 0;
+}
+
+/*div.toc dl dt, div.list-of-tables dl dt, div.list-of-figures dl dt{ 
+          text-align: left;
+		  font-size: small;
+		  font-weight : normal;
+          }*/
+
+/* Revision History */
+div.REVHISTORY th { /* Used to center the title of the table that */
+                    /* contains the revision history */
+                    text-align: center;
+                    }
+
+/* Sections */
+div.sections p { 
+               text-align: left;
+               }
+
+/* Acronyms */
+span.acronym { 
+	font-weight: bold;
+	}
+
+/* Foreignphrase */
+i.foreignphrase { 
+	font-weight: normal;
+	}
+
+div.legalnotice {
+	margin: 2em 0 2em 0
+}
+div.legalnotice p {
+	margin: 0;
+}
+div.abstract {
+		margin: 2em 0 2em 0
+}
+p.copyright{
+		margin: 1em 0 1em 0;
+}
+
+/* ProgramListings */
+pre { 
+	font-family: "courier new", courier, monospace;
+	color: Blue;
+	background-color : #EAEAEA;
+	margin: 0.5em 0 0.5em 0;
+	padding:0.2em;
+	text-align:left;
+	font-size: 90%;
+	}
+pre.programlisting {
+	font-size: 120%;	
+}	
+		
+tt{
+	color: Maroon;
+	font-family: "courier new", courier, monospace;
+	font-size: 100%;
+}
+tt.filename{
+	color:blue;
+	}
+tt.replaceable{
+	color:green;
+	}
+tt.command{
+	font-weight:bold;
+	}
+span.lineannotation {
+  	font-family: arial, helvetica, sans-serif;
+	color:green;
+	}
+.caption {
+	font-style : italic;
+}
+div.note h3 {
+	color:black;
+}
+div.note{
+	margin:1em 0 0.5em 0;
+}
+div.toc dl,div.list-of-tables dl, div.list-of-figures dl {
+	margin: 0.5em 0 0.5em 0;
+	font-size : small;
+	font-weight : normal;
+}
+div.toc, div.list-of-tables, div.list-of-figures {
+	margin: 2em 0 0.5em 0;
+	line-height: 100%;
+
+}
+dt {
+	margin : 0.5em 0 0.5em 0;
+}
+p {
+	margin:0.6em 0 0 0;
+		line-height: 150%;
+		text-align : left;
+		font-size: 100%;
+}
+.blockquote {
+	line-height: 120%;
+	font-size : small;
+	margin: 1em 0 1em 0;
+}
+li{
+	margin:0.2em 0 0.2em 0;
+}
+div.footpage {
+	text-align : center;
+	font-size : small;
+}
+
+/* Misc (te) */
+
+.strong {
+        font-weight:bold;
+
+}
+
+.computeroutput {
+color: blue;
+font-size: 120%;
+font-family: "Courier 10 Pitch", Courier, monospace;
+
+}
+
+.filename {
+color: blue;
+font-size: 120%;
+font-family: "Courier 10 Pitch", Courier, monospace;
+}

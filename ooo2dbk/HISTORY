@@ -1,0 +1,912 @@
+===========================================================
+Package: ooo2dbk 2.1.0
+===========================================================
+First release built by: lgodard at: 2006-12-29T14:56:36
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.1.0
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50739
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+- 
+Bug fixes
+~~~~~~~~~
+- Removed bad characters in ooo2dbk.xsl file.
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- ooo2dbk.xml defaults first to /etc/ooo2dbk.xml, then to CONF_FILE_NAME
+
+===========================================================
+Package: ooo2dbk 2.0.3
+===========================================================
+First release built by: madarche at: 2006-12-15T12:28:48
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.3
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50617
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+- Updated doc and patch.
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- 
+
+===========================================================
+Package: ooo2dbk 2.0.2
+===========================================================
+First release built by: madarche at: 2006-12-15T12:18:10
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.2
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50612
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+- Improved debugging and doc.
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- 
+
+===========================================================
+Package: ooo2dbk 2.0.1
+===========================================================
+First release built by: lgodard at: 2006-12-05T17:02:17
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.1
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50511
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+- Updated the doc to state the support for ODT.
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+-
+
+===========================================================
+Package: ooo2dbk 2.0.0
+===========================================================
+First release built by: lgodard at: 2006-12-05T16:56:33
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.0
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50506
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+-
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+-
+
+===========================================================
+Package: ooo2dbk 2.0.0
+===========================================================
+First release built by: lgodard at: 2006-11-27T14:30:02
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.0
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50313
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+-
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- 
+
+===========================================================
+Package: ooo2dbk 2.0.0
+===========================================================
+First release built by: lgodard at: 2006-11-24T15:06:09
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.0
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50293
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+-
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- 
+
+===========================================================
+Package: ooo2dbk 2.0.0
+===========================================================
+First release built by: lgodard at: 2006-11-24T14:50:36
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.0
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50288
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+-
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- 
+
+===========================================================
+Package: ooo2dbk 2.0.0
+===========================================================
+First release built by: lgodard at: 2006-11-23T19:09:06
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.0
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50242
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+-
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- 
+
+===========================================================
+Package: ooo2dbk 2.0.0
+===========================================================
+First release built by: lgodard at: 2006-11-23T17:06:46
+SVN Tag: https://svn.nuxeo.org/pub/OOo/ooo2dbk/tags/2.0.0
+Build from: https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk@50229
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- supports opendocument OOo 2.x file format
+(xslt modifications by TARDELLI Maurice - CERTU/SYS/ITS" <Maurice.Tardelli@equipement.gouv.fr>)
+
+Bug fixes:
+~~~~~~~~~~
+- 
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- refactoring: no more plateform dependand xslt files in ooo2dbk.xml
+- refactoring: OOo file analyzed at first to obtain oooVersion file 
+
+*******************************************
+** ooo2dbk V1.5.0 [R1 build 2005/12/06-15:53 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/ooo2dbk/trunk Revision: 30354
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Now compiles on win32 with py2exe to standalone console executable.
+Bug fixes:
+~~~~~~~~~~
+- Made ooo2dbk *nix agnostic.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.4.6 [R1 build 2005/11/28-16:33 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/ooo2dbk/trunk Revision: 30028
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added improved support for bibliography entries. They now can include abbrev
+  and URL information. This improvements has been contributed by
+  Paolo Melchiorre <paulox@paulox.net>.
+Bug fixes:
+~~~~~~~~~~
+- Added in the documentation some information on how to submit improvement
+  suggestions.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.4.5 [R1 build 2005/11/25-17:24 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/ooo2dbk/trunk Revision: 29959
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added support for the OOo file modification date.
+- Used the "isrn" attribute in the "bibliomisc" element as it has been
+  integrated since DocBook 4.4.
+Bug fixes:
+~~~~~~~~~~
+- Fixed the legalnotice and authorblurb elements structure that must contain
+  para elements.
+- Removed the useless "convert2" method.
+- Added a needed check to know if we should output authorgroup or not.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.4.4 [R1 build 2005/11/07-14:50 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/ooo2dbk/trunk Revision: 29056
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed the DTD of ooo2dbk.xml.
+- Fixed typo in the module initialization so that ooo2dbk can be used as a
+  python module. This fixes #1098.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.4.3 [R1 build 2005/10/21-13:59 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/ooo2dbk/trunk Revision: 28497
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Updated the DTD of the shipped ooo2dbk.xml config file.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.4.2 [R1 build 2005/10/21-13:46 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/ooo2dbk/trunk Revision: 28492
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Made the path of the ole2img.py script be configurable through the
+  configuration file.
+Bug fixes:
+~~~~~~~~~~
+- Switched to outputting DocBook XML 4.4 since the DocBook 4.3 DTD package had
+  problems.
+- Fixed the use of Saxon with a Catalog Resolver by adding a missing "-u"
+  option.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Improved coding style.
+
+*******************************************
+** ooo2dbk V1.4.1 [R1 build 2005/05/21-19:54 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/ooo2dbk/trunk Revision: 21745
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added a pkg target to the Makefile so that a binary/compiled/prepared
+  distribution of the package can be done.
+Bug fixes:
+~~~~~~~~~~
+- Fixed options parsing that was making impossible to generate article
+  documents.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.4.0 [R1 build 2005/05/19-14:18 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/ooo2dbk/trunk Revision: 21666
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Made ooo2dbk generate DocBook book document by default, instead of article.
+- Added support for contractsponsor and conference metadata.
+- Translated wizard into English.
+- Added new OOo a new template both in English and French.
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- wizard: translation engine (GUI, styles, etc.).
+- model: French model cleaned.
+- xslt, wizard, model: renamed user defined fields for author, corpauthor and
+  contract sponsor metadata.
+- wizard: no more need of autotexts.
+- model: TOC style title to "Section Title".
+
+*******************************************
+** ooo2dbk V1.3.13 [R1 build 2005/03/25-10:22 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Added to Unicode missing conversion for image paths.
+- Updated information about XML resolver catalog in the ooo2dbk.xml
+  configuration file.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.12 [R1 build 2005/03/22-17:41 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed indentation problems in ole2img.py.
+- Fixed help message on --oooserverport in ole2img.py.
+- Fixed OOo selection bug on OLE objects in ole2img.py
+
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.11 [R1 build 2005/03/22-12:14 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Made ooo2dbk able to use output file path containing special characters such
+  as spaces.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.10 [R1 build 2005/03/09-15:14 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed support for "endnote" which was incomplete.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.9 [R1 build 2005/02/21-13:18 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Added back support for line-break. "role" attributes are well propagated.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.8 [R1 build 2005/02/09-15:35 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed the detection of sections because section titles can be text:p or
+  text:h.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.7 [R1 build 2005/02/07-16:09 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Made ooo2dbk accept OOo accented files.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.6 [R1 build 2005/02/01-16:16 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Switched ooo2dbk.xsl stylesheet from Latin9 (ISO-8859-15) to UTF-8 and removed
+  accented characters, so that more XML/XSLT parsers can use it.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.5 [R1 build 2005/01/25-15:50 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Modified ole2img. Some old files were showing odd behavior on selecting OLE
+  objects. If the OLE Object can not be selected to be exported as a graphic a
+  text image "Unable to process OLE object" is created.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Added the build environment to build the RPM file for ooo2dbk. 
+- Made ooo2dbk more flexible by using OLE2IMG_PATH as a constant so that ooo2dbk
+  packaging is easier.
+
+*******************************************
+** ooo2dbk V1.3.4 [R1 build 2005/01/21-11:18 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed OLE objects images that were not always contained inside mediaobject
+  markup.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.3 [R1 build 2005/01/20-16:53 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added support in the custom FO layer for table cell borders.
+Bug fixes:
+~~~~~~~~~~
+- Made OLE objects not included into text-box be also converted.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Added Makefile to build both .deb and .rpm packages (work in progress).
+
+*******************************************
+** ooo2dbk V1.3.2 [R1 build 2005/01/14-17:23 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added an option to specify another configuration file.
+- Added the doc explaining how to use ooo2dbk with the python shipped with
+  OpenOffice.org to process OLE objects.
+- Added the man page contributed by Mohammed Adnène TROJETTE.
+Bug fixes:
+~~~~~~~~~~
+- Renamed default config file config.xml into ooo2dbk.xml so that the software
+  is easier to package.
+- Made much cleaning.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Dealt better with the Python shipped with OOo to process OLE objects.
+
+*******************************************
+** ooo2dbk V1.3.1 [R1 build 2004/12/31-17:06 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added FO support for symbol fonts.
+Bug fixes:
+~~~~~~~~~~
+- Improved example template document.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.3.0 [R1 build 2004/12/31-10:33 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added support for OLE objects (first shot).
+- Added support for print-orientation as processing instructions.
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.2.2 [R1 build 2004/12/29-10:05 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed the numbering for the list items that was always the same.
+- Updated the processing of user fields from the OOo document.
+- Updated the OpenOffice.org template.
+- Made the return error codes be more meaningful.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.2.1 [R1 build 2004/12/22-11:34 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Made any previously existing images directory be deleted so that we don't get
+  unwanted files in the output.
+- Made images path in the DocBook XML be relative to the archive.
+- Made suppression of none border information as processing instructions.
+- Added "Andale Mono" as a font name that should be passed as a processing
+  instruction.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.2.0 [R1 build 2004/12/20-12:00 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added bibliography support.
+- Added glossary support.
+- Added index support.
+Bug fixes:
+~~~~~~~~~~
+- Changed isbn element to <biblioid class="isbn"> as isbn and issn elements are
+  deprecated.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Made cleaning: replaced remaining parameters that should be variables and
+  removed duplicate xsl:output element.
+- Made the preface and appendix templates also match nested sections. It is more
+  user friendly because less error prone for the user.
+
+*******************************************
+** ooo2dbk V1.1.3 [R1 build 2004/12/15-15:53 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Finally completely and cleanly fixed the hierarchy bug in preface and appendix
+  template (using generate-id()).
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.1.2 [R1 build 2004/12/13-09:04 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Made font-name matching on "Bitstream" be matching on full font name
+  "Bitstream Charter", since Bitstream is the name of font provider.
+- Fixed some variables that were declared as params (remains from previous
+  code).
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.1.1 [R1 build 2004/12/10-13:13 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed a bug introduced in V1.0.5 ("Not outputting empty para elements
+  anymore."): images or other elements present in para elements not having any
+  text in them were ignored.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.1.0 [R1 build 2004/12/10-10:37 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added support for "font-name" from OOo that could be used to mark fonts with
+  symbols. 
+- Added support for "border" styles of table cells. The border information is
+  passed as processing instructions that the following XSLT stylesheets will or
+  will not processed.
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.0.7 [R1 build 2004/12/08-17:29 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Adding support for cell alignment in tables.
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Updated the docs.
+
+*******************************************
+** ooo2dbk V1.0.6 [R1 build 2004/12/08-10:56 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Augmented the config.xml configuration file so that each "xslt-command"
+  element has now a "param-syntax" attribute. This is done because XSLT
+  processors have different command line options. ooo2dbk now deals better with
+  the different available XSLT processors.
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.0.5 [R1 build 2004/12/07-18:16 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added new generic support for both DocBook preface and appendix elements.
+- Do not display not visible sections (text:display="none").
+- author elements are now generated inside an authorgroup element.
+- Added support for jobtitle.
+Bug fixes:
+~~~~~~~~~~
+- Not outputting empty para elements anymore.
+  (bugs from previous authors).
+- Used xsl:variable in many places where xsl:parameter was used
+  (bugs from previous authors).
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Renamed all "articleinfo" strings into "metainfo" to have a generic approach.
+- Moved away specific "collection" and "subcollection" markup.
+
+*******************************************
+** ooo2dbk V1.0.4 [R1 build 2004/12/03-17:35 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed XSLT errors (using xsl:param instead of xsl:variable in some places)
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Added new version of keywordsetContent
+
+*******************************************
+** ooo2dbk V1.0.3 [R1 build 2004/12/03-10:46 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added an -xFILE/--xslt=FILE option to specify an alternative XSLT stylesheet
+  to be able to simply customize ooo2dbk.xsl by importing it from another
+  stylesheet.
+- Added support for meta-information set via text:user-field-decl OOo elements.
+Bug fixes:
+~~~~~~~~~~
+- Made the ooo2dbk.xsl XSLT stylesheet be of version "1.0" instead of erroneously
+  being of version "1.1", because at the moment XSLT 1.1 is only a Working Draft
+  of the W3C.
+- Added a template to support OOo "dc:title".
+- Fix book validity bug: a book cannot have para elements outside a chapter.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Now generating "DocBook XML V4.3".
+- Created an HOWTO file.
+
+*******************************************
+** ooo2dbk V1.0.2 [R1 build 2004/12/01-17:16 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added the -a/--article and -b/--book options to respectively produce 
+  DocBook XML articles (default) or DocBook XML books.
+Bug fixes:
+~~~~~~~~~~
+- Renamed "ooo2dbk.py" into "ooo2dbk" as a standalone script should not have any
+  suffix.
+- Moved the README.txt file at the root of the product.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.0.1 [R1 build 2004/12/01-12:34 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Added a "-v/--verbose" option to the ooo2dbk.py script.
+- Added support for superscript and subscript.
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
+** ooo2dbk V1.0.0 [R1 build 2004/11/30-16:47 by madarche]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- The modified ooo2dbk is now distributed by Nuxeo as a product in itself and
+  not as PortalTransforms plugin.
+- Added doc.
+- Added -zFILE/--zipfile=FILE option for generating zipped archive of output
+  Docbook document with subobjecs (if any).
+- Running ooo2dbk with sxw filename containing spaces without -d/--dbkfile
+  option like ./ooo2dbk /tmp/my doc one.sxw will result in generating output
+  Docbook filename with '_' instead of spaces, in our case: my_doc_one.docb.xml
+- Added the support for appendix.
+Bug fixes:
+~~~~~~~~~~
+- When running ./oo2dbk.py /tmp/mydoc.sxw images were created in current
+  directory and output Docbook file in /tmp. Now if -d/--dbkfile is omitted,
+  all generated output is stored in current directory.
+- Using -z/--zipfile option spontaneously led to arising UnicodeDecodeError
+  when writing to zip archive generated images. To avoid that string that
+  represents path to image(filesystem path and path in zipped archive), before
+  using in zip archive operations is encoded with locale preferred encoding
+  like: unicode(path_to_img).encode(locale.getpreferredencoding()).
+- Running ooo2dbk with sxw filename containing spaces without -d/--dbkfile
+  option like ./ooo2dbk /tmp/my doc one.sxw  led to confusion of xsltproc,
+  so it couldn't write to output file. Fixed with replacing in output Docbook
+  filename spaces with '_'.
+- Added an extra test to check if there is at least a non-empty Abstract para
+  before outputting an abstract element in the generated DocBook.
+- Fix appendix so that it does now contain text even if there is no title
+  hierarchy in the appendix.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Using optparse module instead of old custom one for command line parsing.
+- Thanks to optparse module and automatic 'help' generation old stuff for
+  'help' handling is no longer necessary.
+- Using standard python-mode.el formatting: 1 tab is replaced with 4 spaces all
+  over the code.
+- Some renaming inside the code.
+

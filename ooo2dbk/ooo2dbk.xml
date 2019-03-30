@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE config [
+<!ELEMENT config
+	      (xslt-command+, xslt-stylesheet+, dtd+, images, oooserver?, ole?, ooopython?)>
+
+<!ELEMENT xslt-command    EMPTY>
+<!ATTLIST xslt-command
+	      name            CDATA   #REQUIRED
+	      command         CDATA   #REQUIRED
+	      param-syntax    CDATA   #REQUIRED>
+
+<!ELEMENT xslt-stylesheet EMPTY>
+<!ATTLIST xslt-stylesheet
+	      name            CDATA   #REQUIRED
+	      stylesheetPath  CDATA   #REQUIRED>
+
+<!ELEMENT dtd             EMPTY>
+<!ATTLIST dtd
+	      name            CDATA   #REQUIRED
+	      doctype-public  CDATA   #REQUIRED
+	      doctype-system  CDATA   #REQUIRED>
+
+<!ELEMENT images          EMPTY>
+<!ATTLIST images
+	      imageNameRoot   CDATA   #REQUIRED
+	      imagesRelativeDirectory CDATA   #REQUIRED>
+
+<!ELEMENT oooserver       EMPTY>
+<!ATTLIST oooserver
+	      host            CDATA   #REQUIRED
+	      port            CDATA   #REQUIRED>
+
+<!ELEMENT ole             EMPTY>
+<!ATTLIST ole
+	      imgFormat       CDATA   #REQUIRED
+	      scriptPath      CDATA   #REQUIRED>
+
+<!ELEMENT ooopython       EMPTY>
+<!ATTLIST ooopython
+	      path            CDATA   #REQUIRED>
+
+]>
+<!--
+============================
+OOo2DBK - Configuration File
+============================
+$Id$
+-->
+<config>
+
+  <!-- Command for conversion with XsltProc (http://xmlsoft.org) -->
+  <xslt-command
+    name="xsltproc"
+    command="xsltproc %v -o %o %s %i"
+    param-syntax="--stringparam %s %s"
+    />
+
+  <!-- Command for conversion with Saxon (http://saxon.sourceforge.net) -->
+  <xslt-command
+    name="saxon"
+    command="java com.icl.saxon.StyleSheet -o %o %i %s %v"
+    param-syntax="%s=%s"
+    />
+
+  <!-- Command for conversion with Saxon and Catalog Resolver -->
+  <xslt-command
+    name="saxon-cat"
+    command="java com.icl.saxon.StyleSheet -r org.apache.xml.resolver.tools.CatalogResolver -x org.apache.xml.resolver.tools.ResolvingXMLReader -y org.apache.xml.resolver.tools.ResolvingXMLReader -u -o %o %i %s %v"
+    param-syntax="%s=%s"
+    />
+
+  <!-- XXX: Test and update this command definition -->
+  <!--
+  <xslt-command
+    name="xalan"
+    command="java org.apache.xalan.xslt.Process -IN %i -XSL %s -OUT	%o"
+    param-syntax="XXX"
+    />
+  -->
+
+  <!-- XXX: Test and update this command definition -->
+  <!-- Command for free conversion, DocBook to PDF with FOP (http://fop.apache.org) -->
+  <!--
+  <xslt-command
+    name="fop-pdf"
+    command="fop -xsl %s -xml %i -pdf %o"
+    param-syntax="XXX"
+    />
+  -->
+
+        <!-- Changed by te --> 
+        <xslt-command
+		name="fop-pdf2"
+		command="fop -c ../../config/fop-conf.xml %i %o"
+		/>
+
+  <!-- Relative path of OpenOffice.org to DocBook stylesheet -->
+  <xslt-stylesheet
+    name="ooo1"
+    stylesheetPath="ooo2dbk.xsl"
+    />
+  <xslt-stylesheet
+    name="ooo2"
+    stylesheetPath="ooo2dbk.odf.xsl"
+    />
+  
+  <!-- DTD -->
+  <dtd
+    name="docbook44"
+    doctype-public='"-//OASIS//DTD DocBook XML V4.4//EN"'
+    doctype-system='"http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd"'
+    />
+  <dtd
+    name="docbook43"
+    doctype-public='"-//OASIS//DTD DocBook XML V4.3//EN"'
+    doctype-system='"http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"'
+    />
+  <dtd
+    name="docbook412"
+    doctype-public='"-//OASIS//DTD DocBook XML V4.1.2//EN"'
+    doctype-system='"http://www.oasis-open.org/docbook/xml/4.0/docbookx.dtd"'
+    />
+
+  <!-- Images -->
+  <images
+    imageNameRoot="img"
+    imagesRelativeDirectory="images"
+    />
+
+  <!--
+  Listening OpenOffice.org instances to use for OLE processing.
+  This configuration item is only used when the "ole" option is specified.
+  -->
+  <oooserver
+    host="localhost"
+    port="2002"
+    />
+
+  <!--
+  The configuration used when the "ole" option is specified.
+  This specifies the image format for the images generated from potential
+  OLE objects.
+  This also specifies the place where the ole2img.py module/script can be found.
+  This last option will become useless once we don't need to call the ole2img.py
+  script with the python shipped by OpenOffice.org.
+  -->
+  <ole
+    imgFormat="png"
+    scriptPath="ole2img.py"
+    />
+
+  <!--
+  The python shipped with OpenOffice.org.
+  This option should not be needed if OpenOffice.org was shipping Python 2.3
+  or if PyUNO bridge could easily be used from the system Python.
+  This configuration item is only used when the "ole" option is specified.
+  -->
+  <ooopython
+    path="/usr/local/openoffice-1.1.5/program/python"
+    />
+
+</config>

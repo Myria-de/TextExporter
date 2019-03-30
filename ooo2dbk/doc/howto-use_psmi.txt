@@ -1,0 +1,19 @@
+==========================================
+Howto use PSMI for page orientation on PDF
+==========================================
+
+1) Process book.xml to book.psmi using docbook-psmi.xsl
+
+$ xsltproc docbook-psmi.xsl book.xml > book.psmi
+
+
+2) Process book.psmi to book.fo using docbook.xsl
+
+$ xsltproc docbook/fo/docbook.xsl book.psmi > book.fo
+
+
+3) Process book.fo to book.pdf using an FO formater such as FOP or XEP
+
+$ xep -fo book.psmi book.pdf
+
+

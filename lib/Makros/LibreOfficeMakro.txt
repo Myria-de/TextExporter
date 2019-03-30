@@ -1,0 +1,82 @@
+Um diesen Text besser lesen zu können,
+aktivieren Sie in Notepad "Format, Zeilenumbruch".
+
+== Makro unter Libre Office installieren ==
+==========================================================
+1. Gehen Sie auf "Extras, Makros, Makros verwalten, LibreOffice Basic...". In der Baumansicht unter "Makros aus" navigieren Sie zum Eintrag "Standard", wenn dieser nicht sowieso schon angezeigt wird. Standardmäßig gibt es unter "Standard" schon das Module "Module1" und unter "Vorhanden Makros in: Module1" zeigt das Programm das Makro "Main" an. 
+
+2. Sie haben jetzt zwei Möglichkeiten:
+Möglichkeit 1: Sie geben im Dialog "Makro" unter "Makroname" den gewünschten Makronamen ein, beispielsweise "Testmakro", und klicken dann auf "Neu". Das Programm erstellt dann eine leere Makro-Routine, die so aussieht:
+
+
+Sub Testmakro
+
+End Sub
+
+
+Möglichkeit 2: Sie markieren unter "Vorhanden Makros in Module1" den Eintrag "Main" und geben auf die Schaltfläche "Bearbeiten". Im Editor sehen Sie dann
+
+
+Sub Main
+
+End Sub
+
+
+3. Fügen Sie dann den Makro-Quellcode ein. Wenn Sie unter Schritt 2 die Möglichkeit 1 gewählt haben, fügen Sie den Quellcode zwischen "Sub Testmakro" und "End Sub" ein. Das Ergebnis sieht dann so aus:
+
+Sub Testmakro
+<Hier steht der Quellcode>
+<Hier steht der Quellcode>
+<Hier steht der Quellcode>
+End Sub
+
+Wenn Sie unter Schritt 2 die Möglichkeit 1 gewählt haben, fügen Sie den Untern angefügten Makro-Quellcode komplett ein. Das Ergebnis entspricht dem von Möglichkeit 1. 
+
+4. Gehen Sie im Basic Editor auf "Datei, Speichern" und schließen Sie den Editor mit "Datei, Beenden"
+
+Schaltfläche / Hotkey einrichten
+================================
+Ein Makro rufen Sie unter Libre Office über "Extras, Makros, Makro ausführen" oder "Extras, Makros, Makros verwalten, LibreOffice Basic..." auf. Sie können aber auch ein neues Icon in einer beliebigen Symbolleiste erstellen oder einen Hotkey vergeben. 
+
+Gehen Sie auf "Extras -> Anpassen" und wählen Sie die Registerkarte "Tastatur". Suchen Sie nach einer Tastenkombination, die bisher noch nicht belegt ist, etwa Alt-V. Klicken Sie die Tastenkombination an. Gehen Sie unter "Funktionen" auf "LibreOffice-Makros -> users -> Standard > Module1" und unter "Funktion" klicken Sie das gewünschte Makro an. Klicken Sie auf "Ändern" und dann auf "OK". Jetzt lässt sich das Makro schnell über die gewählte Tastenkombination starten. 
+
+Wenn Sie lieber ein Icon in einer Symbolleiste verwenden möchten, gehen Sie auf "Extras -> Anpassen" und dann auf die Registerkarte "Symbolleisten". Es empfiehlt sich, für individuelle Funktionen eine eigene Symbolleiste anzulegen. Dazu klicken Sie auf "Neu" und legen eine Bezeichnung fest. 
+
+Klicken Sie auf "Hinzufügen" und gehen Sie unter "Bereich" auf "LibreOffice Makros -> Meine Makros -> Standard -> Module1". Unter "Befehle" wählen Sie das gewünschte Ihr Makro. Klicken Sie auf "Hinzufügen" und dann auf "Schließen".
+
+== Makrotext für die Steuerung von lwTextExporter.py ==
+Sub FileExport
+oDoc=ThisComponent
+BasicLibraries.LoadLibrary("Tools")
+REM ### Konfiguration - Pfad bitte bei Bedarf anpassen
+myHome=Environ ("HOME")
+PathToDocBookExporter=myHome + "/lwText/lwTextExporter.py"
+myTerminal="/usr/bin/xterm"
+AusgabeOrdner=myHome + "/lwText/Ausgabe"
+REM ### Konfiguration Ende
+REM
+If not FileExists(myTerminal) Then
+MsgBox("Installieren Sie bitte zuerst xterm (sudo apt install xterm).",0,"Fehler")
+stop
+End If
+
+If Not FileExists (PathToDocBookExporter) Then
+MsgBox("lwTextExporter.py nicht gefunden. Bitte Pfad im Makro anpassen.",0,"Fehler")
+stop
+End If
+If Not oDoc.hasLocation Then 
+MsgBox("Sie müssen das Dokument vor dem Konvertieren erst speichern.")
+stop
+End If
+
+If (oDoc.isModified) Then
+  If (oDoc.hasLocation)  Then
+   oDoc.store()
+  End If
+End If
+
+myDocPath=ConvertfromURL(oDoc.URL)
+REM Bitte Parameter für andere Ausgabeformate anpassen
+Param=" -title lwTextExporter -e /usr/bin/python "  + PathToDocBookExporter + " -d " + AusgabeOrdner +" -c html " + myDocPath
+Shell(myTerminal,1,Param, True)
+End Sub

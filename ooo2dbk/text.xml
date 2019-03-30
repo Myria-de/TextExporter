@@ -1,0 +1,732 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+<book lang="de-DE">
+  <?ooogenerator LibreOffice/4.3.4.1$Windows_x86 LibreOffice_project/bc356b2f991740509f321d70e4512a6a54c5f243?>
+  <?oooversion ?>
+  <bookinfo>
+    <title>Beispieldatei Konvertierung Docbook</title>
+    <subtitle>mit m-Docbook-Exporter SXW- und DOC-Dateien konvertieren</subtitle>
+    <pubdate>2015-01-01</pubdate>
+    <author>
+      <firstname>Thorsten</firstname>
+      <surname>Eggeling</surname>
+    </author>
+    <bibliomisc>Email: <ulink url="mailto:te@myria.de" type="">te@myria.de</ulink></bibliomisc>
+    <bibliomisc>Web. <ulink url="http://www.myria.de/" type="">http://www.myria.de</ulink></bibliomisc>
+    <copyright>Copyright © <year>2002</year> <holder>Thorsten Eggeling</holder></copyright>
+    <legalnotice>
+      <para>Persmission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation;with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.A copy of the license is included in the section entitled "GNU Free Documentation License".</para>
+      <para>Es folgt eine Übersetzung des oben stehenden Hinweises, der nur zur Klarheit hier angegeben ist ! (anm.: des Übersetzers)</para>
+      <para>Kopieren, Verbreiten und/oder Modifizieren ist unter den Bedingungen der GNU Free Documentation License, Version 1.2 oder einer späteren Version, veröffentlicht von der Free Software Foundation, erlaubt.</para>
+      <para role="lineBreak">Es gibt keine unveränderlichen Abschnitte,keinen vorderen Umschlagtext und keinen hinteren Umschlagtext. Eine Kopie des Lizenztextes ist unter dem Titel GNU Free Documentation License enthalten. (Ende der Übersetzung des Lizenzhinweistextes) </para>
+    </legalnotice>
+    <legalnotice>
+      <para>
+        <ulink url="http://www.gnu.org/licenses/fdl.html" type="">http://www.gnu.org/licenses/fdl.html</ulink>
+      </para>
+    </legalnotice>
+    <legalnotice>
+      <para/>
+    </legalnotice>
+    <legalnotice>
+      <para/>
+    </legalnotice>
+    <date>2015-01-01T20:39:10.876000000</date>
+    <keywordset/>
+    <confgroup/>
+  </bookinfo>
+  <chapter id="ErsterTitel">
+    <title>Absätze</title>
+    <para>Das ist ein normaler Absatz (Formatvorlage Textkörper oder Standard)</para>
+    <para>Das ist ein Beispiel für einen Codeblock (Formatvorlage Vorformatierter Text oder ProgrammListing):</para>
+    <programlisting>Beispiel für Vorformatierten TextDie Leerzeichen bleiben erhalten <lineannotation>(</lineannotation><lineannotation>Anmerkungen im Code: Format Lineannotation</lineannotation><lineannotation>)</lineannotation>Drei Leerzeichen [ ]Zeilenumbrüche bleiben erhalten(2 Return folgen)Tabulatoren werden in Leerzeichen konvertiertZwei Tabulatoren in eckigen Klammern []</programlisting>
+    <para>Zitat (Formatvorlage: Zitat) mit Attribution (Formatvorlage: Attribution):</para>
+    <blockquote>
+      <attribution>Philosophy of the GNU Project</attribution>
+      <para>Free software is a matter of freedom: people should be free to use software in all the ways that are socially useful. Software differs from material objects--such as chairs, sandwiches, and gasoline--in that it can be copied and changed much more easily. These possibilities make software as useful as it is; we believe software users should be able to make use of them.</para>
+    </blockquote>
+  </chapter>
+  <chapter>
+    <title>Text-Vorlagen</title>
+    <section>
+      <title>Textattribute</title>
+      <para>Hier ist ein Text mit einer <emphasis>Hervorhebung</emphasis> oder <emphasis>kursiv</emphasis>.</para>
+      <para>Hier ist ein <emphasis role="strong">stark betonter</emphasis> Text Hervorhebung in <emphasis role="strong">fett</emphasis>.</para>
+      <para>Hier ist ein Text mit <literal>nicht proportionalen Zeichen</literal> gesetzt.</para>
+      <para>Hier ist eine Pfadbezeichnung <filename>/usr/lib/python21</filename> (Formatvorlage: Filename)</para>
+    </section>
+    <section>
+      <title>Informelle Vorlagen</title>
+      <para>The <option>-a</option> option on the <acronym>UNIX</acronym> <command>ls</command> command or the <option>/r</option> option on the <acronym>DOS</acronym> <command>attrib</command> command, for example.</para>
+      <para>Hier ist ein weiteres Beispiel für eine Kommandozeile</para>
+      <programlisting><command>java</command> com.icl.saxon.StyleSheet <option>-o</option> <replaceable>output</replaceable> <replaceable>input</replaceable> <replaceable>stylesheet</replaceable></programlisting>
+    </section>
+  </chapter>
+  <chapter>
+    <title>Abschnitts-Titel</title>
+    <para>Die Konvertierung erlaubt auch verschachtelte Abschnitte, wie sie in den Open Office Kapiteln vorkommen.</para>
+    <section>
+      <title>Beispiel für eine Überschrift 2</title>
+      <para>Text in einem Unterabschnitt</para>
+      <section>
+        <title>Beispiel für eine Überschrift 3</title>
+        <para>Text in einem Unter-Unter-Abschnitt</para>
+      </section>
+    </section>
+    <section>
+      <title>Beispiel für eine Überschrift 2</title>
+      <para>Text in einem Unter-Abschnitt</para>
+    </section>
+  </chapter>
+  <chapter>
+    <title>Listen</title>
+    <section>
+      <title>Listen mit Bullets</title>
+      <para>Die unterschiedlichen Zeichen für ungeordnete Listen überträgt das Tool nicht. Aufzählungszeichen erscheinen immer mit dem Standard-Symbol.</para>
+      <itemizedlist>
+        <listitem>
+          <para>Eintrag in der Aufzählung</para>
+        </listitem>
+        <listitem>
+          <para>Eintrag in der Aufzählung</para>
+          <itemizedlist>
+            <listitem>
+              <para>Unter-Eintrag in der Aufzählung</para>
+            </listitem>
+            <listitem>
+              <para>Unter-Eintrag in der Aufzählung</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem>
+          <para>Eintrag in der Aufzählung</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Nummerierte Listen</title>
+      <para>Die unterschiedlichen nummerierten Listen werden inclusive der Einzüge übertragen. Die fortlaufende Nummerierung wird in das DocBook-Format überführt.</para>
+      <orderedlist continuation="restarts" numeration="arabic">
+        <listitem>
+          <para>Nummerierung mit arabischen Ziffern</para>
+        </listitem>
+        <listitem>
+          <para>Nummerierung mit arabischen Ziffern</para>
+          <orderedlist continuation="restarts" numeration="loweralpha">
+            <listitem>
+              <para>Nummerierung mit kleinen Buchstaben</para>
+            </listitem>
+            <listitem>
+              <para>Nummerierung mit kleinen Buchstaben</para>
+              <orderedlist continuation="restarts" numeration="upperroman">
+                <listitem>
+                  <para>Nummerierung mit römischen Ziffern</para>
+                </listitem>
+                <listitem>
+                  <para>Nummerierung mit römischen Ziffern</para>
+                </listitem>
+              </orderedlist>
+            </listitem>
+            <listitem>
+              <para>Nummerierung mit kleinen Buchstaben</para>
+            </listitem>
+          </orderedlist>
+        </listitem>
+        <listitem>
+          <para>Nummerierung mit arabischen Ziffern</para>
+        </listitem>
+      </orderedlist>
+    </section>
+    <section>
+      <title>Bullets und nummerierte Listen gemischt</title>
+      <orderedlist continuation="restarts" numeration="upperalpha">
+        <listitem>
+          <para>Nummerierung mit großen Buchstaben</para>
+        </listitem>
+        <listitem>
+          <para>Nummerierung mit großen Buchstaben</para>
+          <itemizedlist>
+            <listitem>
+              <para>Bullet</para>
+            </listitem>
+            <listitem>
+              <para>Bullet</para>
+              <orderedlist continuation="restarts" numeration="lowerroman">
+                <listitem>
+                  <para>Nummerierung mit kleinen römischen Ziffern</para>
+                </listitem>
+                <listitem>
+                  <para>Nummerierung mit kleinen römischen Ziffern</para>
+                </listitem>
+              </orderedlist>
+            </listitem>
+            <listitem>
+              <para>Bullet</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </orderedlist>
+    </section>
+    <section>
+      <title>Wörterlisten </title>
+      <para>Wörterlisten sind auf zwei Formatvorlagen beschränkt: </para>
+      <variablelist>
+        <varlistentry>
+          <term>Zu definierendes Wort</term>
+          <listitem>Definition des Wortes</listitem>
+        </varlistentry>
+      </variablelist>
+      <variablelist>
+        <varlistentry>
+          <term>Eine weitere Definition</term>
+          <listitem>Eine Definition, die mehrere Zeilen in OpenOffice umfaßt... wird eine Paragraphenfolge im Docbook-Dokument.</listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+  </chapter>
+  <chapter>
+    <title>Tabellen</title>
+    <para>Verbundene Zellen sind möglich, aber nur horizontal (zwei Zellen markieren und dann :</para>
+    <section>
+      <title>Tabelle ohne Legende</title>
+      <informaltable>
+        <tgroup cols="5">
+          <colspec colname="c1" colwidth="3.4cm"/>
+          <colspec colname="c2" colwidth="3.4cm"/>
+          <colspec colname="c3" colwidth="3.4cm"/>
+          <colspec colname="c4" colwidth="3.4cm"/>
+          <colspec colname="c5" colwidth="3.4cm"/>
+          <thead>
+            <row>
+              <entry>
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Spalte 1</para>
+              </entry>
+              <entry>
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Spalte 2</para>
+              </entry>
+              <entry>
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Spalte 3</para>
+              </entry>
+              <entry>
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Spalte 4</para>
+              </entry>
+              <entry>
+                <?border 0.05pt solid #000000?>
+                <para>Spalte 5</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry namest="c2" nameend="c3" valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>verbundene Zellen</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zelleninhalt</para>
+                <para>über mehrere Spalten</para>
+              </entry>
+              <entry namest="c3" nameend="c4">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>verbundene Zellen</para>
+              </entry>
+              <entry>
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+    <section>
+      <title>Tabelle mit Legende:</title>
+      <table id="refTable0">
+        <title> Beispiel einer Tabelle mit Legende</title>
+        <tgroup cols="5">
+          <colspec colname="c1" colwidth="3.4cm"/>
+          <colspec colname="c2" colwidth="3.4cm"/>
+          <colspec colname="c3" colwidth="3.4cm"/>
+          <colspec colname="c4" colwidth="3.4cm"/>
+          <colspec colname="c5" colwidth="3.4cm"/>
+          <thead>
+            <row>
+              <entry>
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Spalte 1</para>
+              </entry>
+              <entry>
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Spalte 2</para>
+              </entry>
+              <entry>
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Spalte 3</para>
+              </entry>
+              <entry>
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Spalte 4</para>
+              </entry>
+              <entry>
+                <?border 0.05pt solid #000000?>
+                <para>Spalte 5</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry namest="c2" nameend="c3" valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>verbundene Zellen</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zelleninhalt</para>
+                <para>über mehrere Spalten</para>
+              </entry>
+              <entry namest="c3" nameend="c4">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>verbundene Zellen</para>
+              </entry>
+              <entry>
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+              <entry>
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zellinhalt</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section>
+      <title>(Sehr) komplexe Tabellen</title>
+      <table id="refTable1">
+        <title> Sehr komplexe Tabelle</title>
+        <tgroup cols="13">
+          <colspec colname="c1" colwidth="1.7cm"/>
+          <colspec colname="c2" colwidth="1.2cm"/>
+          <colspec colname="c3" colwidth="1.7cm"/>
+          <colspec colname="c4" colwidth="2.2cm"/>
+          <colspec colname="c5" colwidth="1.7cm"/>
+          <colspec colname="c6" colwidth="2.3cm"/>
+          <colspec colname="c7" colwidth="1.4cm"/>
+          <colspec colname="c8" colwidth="1.4cm"/>
+          <colspec colname="c9" colwidth="0.9cm"/>
+          <colspec colname="c10" colwidth="0.8cm"/>
+          <colspec colname="c11" colwidth="0.9cm"/>
+          <colspec colname="c12" colwidth="0.5cm"/>
+          <colspec colname="c13" colwidth="0.1cm"/>
+          <thead>
+            <row>
+              <entry namest="c1" nameend="c2">
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Titel 1</para>
+              </entry>
+              <entry namest="c3" nameend="c4" morerows="1" valign="middle">
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Titel 2</para>
+              </entry>
+              <entry namest="c5" nameend="c6">
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Titel 3</para>
+              </entry>
+              <entry namest="c7" nameend="c8">
+                <?border-top 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Titel 4</para>
+              </entry>
+              <entry namest="c9" nameend="c12">
+                <?border 0.05pt solid #000000?>
+                <para>Titel 5</para>
+              </entry>
+            </row>
+            <row>
+              <entry valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Untertitel</para>
+              </entry>
+              <entry valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Untertitel </para>
+              </entry>
+              <entry valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Untertitel </para>
+              </entry>
+              <entry valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Untertitel</para>
+              </entry>
+              <entry valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Untertitel </para>
+              </entry>
+              <entry valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Untertitel </para>
+              </entry>
+              <entry namest="c9" nameend="c10" valign="middle">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Untertitel </para>
+              </entry>
+              <entry namest="c11" nameend="c12" valign="middle">
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Untertitel</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry namest="c1" nameend="c2" morerows="1">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Horizontale und vertikale verbundene Zellen</para>
+              </entry>
+              <entry namest="c3" nameend="c6">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Horizontal verbundenen Zellen</para>
+              </entry>
+              <entry namest="c7" nameend="c8">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+              <entry namest="c9" nameend="c12" morerows="1">
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Vertikal verbundenen Zellen</para>
+              </entry>
+            </row>
+            <row>
+              <entry namest="c3" nameend="c4">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+              <entry namest="c5" nameend="c8">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Horizontal verbundenen Zellen</para>
+              </entry>
+            </row>
+            <row>
+              <entry namest="c1" nameend="c4">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Die 4 Zellen sind vertikal und horizontal verbunden</para>
+              </entry>
+              <entry namest="c5" nameend="c6">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+              <entry namest="c7" nameend="c8">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zelle</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zelle</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zelle</para>
+              </entry>
+              <entry namest="c12" nameend="c13">
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Zelle</para>
+              </entry>
+            </row>
+            <row>
+              <entry namest="c1" nameend="c3" morerows="3">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt über mehrere Absätze. Inhalt über mehrere Absätze. Inhalt über mehrere Absätze</para>
+              </entry>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>v</para>
+              </entry>
+              <entry namest="c5" nameend="c6">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+                <para>Inhalt</para>
+              </entry>
+              <entry namest="c7" nameend="c8">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+              <entry namest="c9" nameend="c13">
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>v</para>
+              </entry>
+              <entry namest="c5" nameend="c6" morerows="2">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+              <entry namest="c7" nameend="c8" morerows="2">
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+              <entry namest="c9" nameend="c13" morerows="2">
+                <?border-right 0.05pt solid #000000?>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>Inhalt</para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>v</para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <?border-bottom 0.05pt solid #000000?>
+                <?border-left 0.05pt solid #000000?>
+                <para>v</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </chapter>
+  <chapter id="Hyperlinks Verweise und Fu&#xDF;noten">
+    <title>Hyperlinks, Verweise und Fußnoten</title>
+    <section>
+      <title>Hyperlinks</title>
+      <para>Diese Zeile enthält einen Hyperlink auf <ulink url="http://www.openoffice.org/" type="">OpenOffice.org</ulink> und einen anderen auf die <ulink url="http://docbook.sourceforge.net/" type="">Seite der Docbook Entwickler</ulink>.</para>
+    </section>
+    <section>
+      <title>Interne Verweise</title>
+      <para>Hier ist ein Verweis auf den Titel des Dokuments <link linkend="ErsterTitel">Absätze</link>. Der Titel "Absätze" ist in diesem Dokument mit einer Textmarke versehen. Um einen Textmarke einzufügen markieren Sie den gewünschten Text beziehungsweise die komplette Überschrift. Gehen Sie auf „Einfügen → Textmarke“. Geben Sie den gewünschten Verweis-Text ein und klicken Sie auf „OK“. Bei Überschriften können Sie auch den kompletten Text der Überschrift einsetzen. Um einen Verweis einzubauen, setzen Sie den Cursor auf die gewünschte Position und gehen auf „Einfügen → Querverweis“. Wählen Sie unter „Typ“ den Eintrag „Lesezeichen“ und unter „Referenz einfügen“ den Eintrag „Referenztext“. Klicken Sie auf „Einfügen“. Auf diese Weise eingefügte Verweise funktionieren auch in gesplitteten Dokumenten wie „HTML (mehrere Dateien)“. Die Verweise werden korrekt auf das jeweilige Teildokument verlinkt.</para>
+      <para>Hier ist ein weiterer Verweis auf eine <link linkend="refTable0">Tabelle 1 Beispiel einer Tabelle mit Legende</link>.</para>
+    </section>
+    <section>
+      <title>Fußnoten</title>
+      <para>Hier steht ein Text mit einem Verweis auf eine Fußnote<footnote id="ftn1"><para>Text einer Fußnote.</para></footnote>.</para>
+      <para>Und hier ist eine weitere Fußnote<footnote id="ftn2"><para>Und eine weitere Fußnote,</para></footnote>.</para>
+    </section>
+  </chapter>
+  <chapter>
+    <title>Abbildungen und Grafiken</title>
+    <section>
+      <title>Bild ohne Beschriftung</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/img001.png" width="10.051cm" depth="5.599cm"/>
+        </imageobject>
+      </mediaobject>
+      <para>Notre Dame de Paris</para>
+    </section>
+    <section>
+      <title>Bild mit Beschriftung</title>
+      <figure id="refIllustration0">
+        <title> Titelblatt von "Docbook - The Definitive Guide"</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/img002.png" width="6.008cm" depth="7.858cm"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para/>
+    </section>
+    <section>
+      <title>Inline Images</title>
+      <para/>
+      <para>Dieser Absatz kann ein kleines, in den Text integriertes Icon enthalten <inlinemediaobject><imageobject><imagedata fileref="images/img003.png" width="0.633cm" depth="0.633cm"/></imageobject></inlinemediaobject>Symbole de note. Es zeigt das Standard-Icon für Notizen in Docbook. In OpenOffice.org wird so etwas als verankert "am Zeichen" bezeichnet, im Docbook-Jargon ist es ein Inline-Image.</para>
+      <para>Inline-Bilder sind die einzigen, die in Docbook auch anklickbar sind.</para>
+      <para>Auf das Gnu können Sie klicken <inlinemediaobject><imageobject><imagedata fileref="images/img004.png" width="2.117cm" depth="2.646cm"/></imageobject></inlinemediaobject>GNU</para>
+    </section>
+  </chapter>
+  <chapter>
+    <title>Anmerkungen</title>
+    <note>
+      <para>Dies ist eine einfache Anmerkung. Sie basiert auf dem Absatz-Formatvorlage <emphasis>Note</emphasis>. Dieser erlaubt es kleine Kommentare schnell im Text unterzubringen.</para>
+      <para role="lineBreak">Sie kann mit einem Zeilenumbruch versehen werden (&lt;Shift&gt;-&lt;Return&gt;), aber zwei Absätze in einer Anmerkung ergeben zwei Anmerkungen und nicht eine Anmerkung mit zwei Absätzen.</para>
+    </note>
+    <section>
+      <title>Komplexe Anmerkungen mit Rahmen</title>
+      <para><emphasis role="strong">Hinweis:</emphasis> Dieses Beispiel funktioniert im Moment nicht. Die Funktion steht nicht zur Verfügung.</para>
+      <para>Es folgt eine etwas komplexerer Anmerkung. Sie wird mit einem Rahmen ("Einfügen, Rahmen") und der Rahmenvorlage "Note" erzeugt. Der Rahmen kann beliebige Absatzarten aufnehmen. Diese Funktion will <firstname>Eric</firstname><surname> Bellot noch weiterentwickeln und auf andere Elemente wie Begriffs-Definitionen und Zitate ausdehnen.</surname></para>
+      <para/>
+    </section>
+  </chapter>
+</book>

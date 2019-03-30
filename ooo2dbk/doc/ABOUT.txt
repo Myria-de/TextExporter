@@ -1,0 +1,86 @@
+
+===============================================
+OOo2DBK: Generating DocBook from OpenOffice.org
+===============================================
+
+:Authors: - Marc-Aurèle Darche
+          - Laurent Godard
+
+:Revision: $Id$
+
+.. sectnum::    :depth: 4
+.. contents::   :depth: 4
+
+
+Presentation
+============
+
+OOo2DBK is an OpenOffice.org document (ODT and SXW) to DocBook XML converter. It
+can produce both DocBook "article" and DocBook "book" documents.
+
+The online reference presenting all the available DocBook elements is
+http://docbook.org/tdg/en/html/
+
+ooo2dbk widely extends ooo2sdbk, written by Eric Bellot. This
+version can still be found at http://www.chez.com/ebellot/ooo2sdbk/
+
+A modified version of ooo2sdbk has also be done in 2003 by Stefan Rinke and can
+be found at http://www.stefan-rinke.de/articles/publish/en/
+
+Use the templates provided in the ooo directory of this package to create your own OOo
+documents from which DocBook documents will be generated.
+These templates (in French and English) contain all the information on
+installing and using OOo2dbk.
+
+Features and changes over ooo2sdbk
+==================================
+
+  * DocBook support
+    o Generating "DocBook XML V4.3".
+    o Generating DocBook "article" or DocBook "book" documents based on user
+      choice, generated documents have the corresponding structure.
+    o Added new generic support for both DocBook preface and 
+      appendix elements.
+    o Added support for superscript and subscript elements.
+    o Adding support for cell alignment in tables.
+    o Added support for "border" styles of table cells. The 
+      border information is passed as processing instructions that the 
+      following XSLT stylesheets are able to process.
+    o Added support for "font-name" from OOo that could be used 
+      to mark fonts with symbols.
+
+  * OpenOffice.org interactions
+    o Added support for meta-information set via 
+      text:user-field-decl OOo elements.
+    o Do not display not visible sections (text:display="none").
+    
+  * Options and configuration
+    o Added -zFILE/--zipfile=FILE option for generating zipped archive of output
+      DocBook document with subobjecs (if any).
+    o Augmented the config.xml configuration file so that each "xslt-command"
+      element has now a "param-syntax" attribute. This is done because XSLT
+      processors have different command line options. ooo2dbk now deals better
+      with the different available XSLT processors.
+    o Added an -xFILE/--xslt=FILE option to specify an alternative XSLT
+      stylesheet to be able to simply customize ooo2dbk.xsl by importing it from
+      another stylesheet.
+    o Added a "-v/--verbose" option to the ooo2dbk script.
+
+Download
+========
+
+Get the latest ooo2dbk snapshot from Nuxeo SVN repository:
+https://svn.nuxeo.org/pub/OOo/ooo2dbk/trunk
+
+Bugs can be reported at http://svn.nuxeo.org/trac/pub/newticket
+Reports must include the output of ooo2sdbk with the "--verbose" option and the
+input OOo file.
+
+Improvements suggestions are welcomed, especially if they come with a diff
+file and an input OOo example file.
+
+
+.. Local Variables:
+.. mode: rst
+.. End:
+.. vim: set filetype=rst:
